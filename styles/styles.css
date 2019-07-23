@@ -1,0 +1,164 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Source Code Pro', monospace;
+}
+
+header {
+	overflow: hidden;
+}
+
+.navigation {
+	background-color: rgb(219,163,128,0.5);
+	height: 100px;
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 100;
+}
+
+/*jei daugiau čia nieko nedėsiu galima bus viską centruoti pridedant šią klasę kitur  */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.navigation .container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-between;	
+}
+
+li a {
+	text-decoration: none;
+	margin-left: 20px;
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+	/*kad sekantys įdėti ir neužpilantys pilnos eilutės būtų lygiuojami centre? */
+	align-items: center;
+}
+
+.header-content {
+	position: relative;
+	height: 572px;
+	background-color: grey;
+	background-image: url(../images/strawberry.jpg);
+	background-size: cover;
+	background-position: right center;
+}
+
+.header-img {
+	width: 100%;
+}
+
+.header-title-container {
+	position: absolute;
+	max-width: 1200px;
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left:50%;
+	transform: translate(-50%, 0);
+}
+
+.header-title {
+	position: absolute;
+	top: 50%;
+	left: 0%;
+	transform: translate(0%, -50%);
+	background-color: rgba(255, 255, 255, 0.5);
+	padding: 50px;
+	width: 50%;
+}
+
+
+.products-navigators {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	background-color: #f3f3f3;
+}
+
+.products-item-wrapper {
+	background-color: rgb(255, 255, 255);
+	height: 200px;
+	width: 200px;
+	margin: 10px;
+	position: relative;
+	top:-100px; 
+	box-shadow: 2px 4px 32px rgba(0,0,0,0.05);
+	display: flex;  
+	align-items: center; 
+	justify-content: center; 
+	text-align: center; 
+}
+
+.product-item img {
+	width: 30%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.gallery {
+	background-color: #ddd9d9;
+}
+
+.gallery-item img {
+	width: 300px;
+}
+
+.galerry-item-wraper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+}
+
+.galerry-item-wraper .gallery-item {
+	width: 33.333%;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+}
+
+.our-contacts {
+	width: 30%;
+}
+.clients-contacts {
+	width: 70%;
+}
+
+#clients-name{
+	width: 100%;
+}
+
+#clients-mail{
+	width: 100%;
+}
+
+#clients-message {
+	width: 100%;
+	height: 200px;
+}
+
+button {
+	margin-top: 20px;
+}
+
