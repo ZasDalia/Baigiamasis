@@ -232,13 +232,13 @@ li a:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-button {
+.bottom-btn {
 	margin-top: 40px;
 	padding: 10px;
 	border-radius: 5px;
 }
 
-button:before {
+.bottom-btn:before {
 	content:'';
 	position: absolute;
 	top: 0px;
@@ -250,7 +250,7 @@ button:before {
 	transition: all 2s ease;
 } 
 
-button:hover:before {
+.bottom-btn:hover:before {
 	width: 100%;
 }
 
@@ -286,4 +286,37 @@ footer {
 #message {
 	width: 80%;
 	height: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+  a {
+		width: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  a {
+		width: 100%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .header-title {
+		width: 90%;
+		left: 5%;
+		padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contacts {
+		display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+#clients-name, #clients-mail, #message {
+		width:100%;
+  }
 }
