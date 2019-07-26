@@ -1,4 +1,4 @@
-var buttons = document.querySelectorAll("a");
+var buttons = document.querySelectorAll("li a");
 
 for (var i = 0; i < buttons.length; i++) {
   
@@ -16,4 +16,3 @@ for (var i = 0; i < buttons.length; i++) {
     
   });
 }
-

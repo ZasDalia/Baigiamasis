@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/jquery.fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
 	<link rel="stylesheet" type="text/css" href="styles/styles1.css">
+
 </head>
 
 <body>
@@ -21,7 +23,6 @@
 					<li><a href="#buy">užsakyti</a></li>
 					<li><a href="#gall">kepiniai</a></li>
 					<li><a href="#contacts">kontatai</a></li>
-					<li><a href="#recipes">receptai</a></li>
 				</ul>
 			</div>
 		</div>
@@ -88,85 +89,103 @@
 			</div>
 		</section>
 	</div>
-	<section id="gall" class="gallery">
+	<section id="gall" class="all-gallery">
 		<div class="container">
 			<h2>Kepiniai</h2>
 			<div class="all-gallery-items">
+				
+				<a data-fancybox="galerry" data-caption="X pyragas" href="images/IMG1.jpg">
+					<div class="galerry-item-wraper">
+						<div class="gallery-item" style="background-image:url(images/IMG1.jpg);">
+							<div class="content-wrapper">
+								<h3>X pyragas</h3>
+							</div>
+						</div>
+					</div>
+				</a>
+				
+				<a data-fancybox="galerry" data-caption="X pyragas" href="images/IMG2.jpg">
+					<div class="galerry-item-wraper">
+						<div class="gallery-item" style="background-image:url(images/IMG2.jpg);">
+							<div class="content-wrapper">
+								<h3>X pyragas</h3>
+							</div>
+						</div>
+					</div>
+					
 
-				<div class="galerry-item-wraper">
-					<div class="gallery-item" style="background-image:url(images/IMG1.jpg);">
-						<div class="content-wrapper">
-							<h3>X pyragas</h3>
+					<a data-fancybox="galerry" data-caption="X pyragas" href="images/IMG3.jpg">
+						<div class="galerry-item-wraper">
+							<div class="gallery-item" style="background-image:url(images/IMG3.jpg);">
+								<div class="content-wrapper">
+									<h3>X pyragas</h3>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
+					</a>
 
-				<div class="galerry-item-wraper">
-					<div class="gallery-item" style="background-image:url(images/IMG2.jpg);">
-						<div class="content-wrapper">
-							<h3>X pyragas</h3>
+
+					<a data-fancybox="galerry" data-caption="X pyragas" href="images/IMG1.jpg">
+						<div class="galerry-item-wraper">
+							<div class="gallery-item" style="background-image:url(images/IMG1.jpg);">
+								<div class="content-wrapper">
+									<h3>X pyragas</h3>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="galerry-item-wraper">
-					<div class="gallery-item" style="background-image:url(images/IMG3.jpg);">
-						<div class="content-wrapper">
-							<h3>X pyragas</h3>
+					</a>
+
+
+					<a data-fancybox="galerry" data-caption="X pyragas" href="images/IMG2.jpg">
+						<div class="galerry-item-wraper">
+							<div class="gallery-item" style="background-image:url(images/IMG2.jpg);">
+								<div class="content-wrapper">
+									<h3>X pyragas</h3>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="galerry-item-wraper">
-					<div class="gallery-item" style="background-image:url(images/IMG1.jpg);">
-						<div class="content-wrapper">
-							<h3>X pyragas</h3>
+					</a>
+
+					<a data-fancybox="galerry" data-caption="X pyragas" href="images/IMG3.jpg">
+						<div class="galerry-item-wraper">
+							<div class="gallery-item" style="background-image:url(images/IMG3.jpg);">
+								<div class="content-wrapper">
+									<h3>X pyragas</h3>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div class="galerry-item-wraper">
-					<div class="gallery-item" style="background-image:url(images/IMG3.jpg);">
-						<div class="content-wrapper">
-							<h3>X pyragas</h3>
-						</div>
-					</div>
-				</div>
-				<div class="galerry-item-wraper">
-					<div class="gallery-item" style="background-image:url(images/IMG2.jpg);">
-						<div class="content-wrapper">
-							<h3>X pyragas</h3>
-						</div>
-					</div>
+					</a>
 				</div>
 			</div>
-		</div>
-	</section>
-<footer id="contacts">
-	<div class="container">
-		<section class="contacts">
-			<div class="our-contacts">
-				<h3> Susisiekite su mumis!</h3>
-				<h4>Telefonas: 860101010</h4>
-				<h4>El. paštas: lorem@loremipsum.lt </h4>
-			</div>
-			<form class ="clients-contacts">
-				<h4>Jūsų vardas (privalomas):</h4>
-				<input class= "input" type="text" id="clients-name" name="name" placeholder="Įveskite savo vardą..">
-				<h4>El. paštas (privalomas):</h4>
-				<input class= "input" type="text" id="clients-mail" name="mail" placeholder="Įveskite savo el. paštą..">
-				<h4>Žinutė:</h4>
-				<textarea class= "input" type="text" id="message" name="message" placeholder=
-				'Užduokite klausimą čia ir spauskite "siųsti"..'></textarea>
-				<br>
-				<button id="btn" type="button">Siųsti!</button>	
-			</form>
 		</section>
+		<footer id="contacts">
+			<div class="container">
+				<section class="contacts">
+					<div class="our-contacts">
+						<h3> Susisiekite su mumis!</h3>
+						<h4>Telefonas: 860101010</h4>
+						<h4>El. paštas: lorem@loremipsum.lt </h4>
+					</div>
+					<form class ="clients-contacts">
+						<h4>Jūsų vardas (privalomas):</h4>
+						<input class= "input" type="text" id="clients-name" name="name" placeholder="Įveskite savo vardą..">
+						<h4>El. paštas (privalomas):</h4>
+						<input class= "input" type="text" id="clients-mail" name="mail" placeholder="Įveskite savo el. paštą..">
+						<h4>Žinutė:</h4>
+						<textarea class= "input" type="text" id="message" name="message" placeholder=
+						'Užduokite klausimą čia ir spauskite "siųsti"..'></textarea>
+						<br>
+						<button id="btn" type="button">Siųsti!</button>	
+					</form>
+				</section>
 
 
-	</footer>
+			</footer>
 
 
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+			<script src="scripts/jquery.fancybox.min.js"></script>
+			<script type="text/javascript" src="scripts/javascript.js"></script>
 
-
-<script type="text/javascript" src="scripts/javascript.js"></script>
-
-</body>
-</html>
+		</body>
+		</html>
